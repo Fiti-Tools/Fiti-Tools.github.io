@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="assets/style.css" />
 </head>
 <body>
+  <!-- TOP BAR -->
   <header class="topbar">
     <div class="brand">
       <div class="logo-box">
@@ -25,10 +26,12 @@
   </header>
 
   <main class="container">
+    <!-- TÍTULO PRINCIPAL -->
     <section class="intro">
-  <h2>Catálogo de productos</h2>
-</section>
+      <h1>Catálogo de productos</h1>
+    </section>
 
+    <!-- GRID DE CATEGORÍAS -->
     <section class="grid">
 
       <!-- VIDRIO -->
@@ -50,7 +53,7 @@
           <li>Insumos para DVH</li>
         </ul>
         <div class="card-footer">
-          <span class="section-marker section-vidrio">Ver listado de Vidrio</span>
+          <span class="section-marker section-vidrio btn">Ver listado de Vidrio</span>
         </div>
       </a>
 
@@ -75,7 +78,7 @@
           <li>Máquinas industriales</li>
         </ul>
         <div class="card-footer">
-          <span class="section-marker section-aluminio">Ver listado de Aluminio</span>
+          <span class="section-marker section-aluminio btn">Ver listado de Aluminio</span>
         </div>
       </a>
 
@@ -97,7 +100,7 @@
           <li>Carros colgantes para portón</li>
         </ul>
         <div class="card-footer">
-          <span class="section-marker section-metal">Ver listado de Metal</span>
+          <span class="section-marker section-metal btn">Ver listado de Metal</span>
         </div>
       </a>
 
@@ -115,7 +118,7 @@
           <li>Detalle de medidas, modelos y aplicaciones en el archivo Excel.</li>
         </ul>
         <div class="card-footer">
-          <span class="section-marker section-construccion">Ver listado de Construcción</span>
+          <span class="section-marker section-construccion btn">Ver listado de Construcción</span>
         </div>
       </a>
 
@@ -127,6 +130,7 @@
   </footer>
 
   <script>
+    // Año automático en el footer
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 </body>
