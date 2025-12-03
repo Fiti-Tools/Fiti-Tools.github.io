@@ -7,6 +7,7 @@
   padding: 0;
 }
 
+/* PALETA PRINCIPAL */
 :root {
   --blue-900: #02071a;
   --blue-800: #041027;
@@ -79,7 +80,7 @@ body {
   color: rgba(255, 255, 255, 0.7);
 }
 
-/* Estado */
+/* PASTILLA DE ESTADO */
 .status-pill {
   display: inline-flex;
   align-items: center;
@@ -99,22 +100,36 @@ body {
   background: #33ff99;
 }
 
-/* CONTENEDOR */
+/* CONTENEDOR PRINCIPAL */
 .container {
   max-width: 1100px;
   margin: 0 auto;
   padding: 1.5rem 1rem 2.4rem;
 }
 
-/* INTRO */
-.intro h1 {
-  font-size: 1.35rem;
-  margin-bottom: 0.2rem;
+/* INTRO / TÍTULO PRINCIPAL */
+.intro {
+  margin: 0.8rem 0 0.6rem;
 }
 
-.intro p {
-  font-size: 0.9rem;
-  color: var(--text-soft);
+.intro h2 {
+  font-size: 1.4rem;
+  font-weight: 800;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 0.25rem;
+}
+
+/* Barra luminosa bajo el título */
+.intro h2::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 75%;
+  height: 3px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, rgba(9, 84, 216, 0.9), rgba(39, 188, 255, 0.2));
 }
 
 /* GRID TARJETAS */
@@ -131,43 +146,44 @@ body {
   }
 }
 
+/* TARJETA */
 .card {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 0.9rem 1rem 0.8rem;
+  padding: 0.9rem 1rem 0.9rem;
   border-radius: 20px;
   background: var(--card-bg);
   border: 1px solid var(--border-soft);
-  text-decoration: none;
   color: inherit;
+  text-decoration: none;
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.9);
   position: relative;
   overflow: hidden;
-  transition: transform 0.12s ease-out, box-shadow 0.12s, border-color 0.12s,
-    background 0.12s ease-out;
+  transition:
+    transform 0.18s ease-out,
+    box-shadow 0.18s ease-out,
+    border-color 0.18s ease-out,
+    background 0.18s ease-out;
 }
 
-/* Glow en esquina */
+/* Glow suave */
 .card::before {
   content: "";
   position: absolute;
-  inset: 0;
-  background: radial-gradient(circle at top right,
-    rgba(9, 84, 216, 0.4),
-    transparent 60%);
+  inset: -20%;
+  background: radial-gradient(circle at top right, rgba(9, 84, 216, 0.35), transparent 60%);
   opacity: 0;
   pointer-events: none;
-  transition: opacity 0.15s ease-out;
+  transition: opacity 0.2s ease-out;
 }
 
-/* Hover PRO */
 .card:hover,
 .card:active {
   transform: translateY(-4px);
-  box-shadow: 0 6px 20px rgba(0,0,0,0.35);
-  border-color: rgba(129, 179, 255, 0.8);
+  border-color: rgba(129, 179, 255, 0.85);
   background: rgba(10, 24, 70, 0.98);
+  box-shadow: 0 26px 60px rgba(0, 0, 0, 0.95);
 }
 
 .card:hover::before {
@@ -186,9 +202,9 @@ body {
   color: var(--text-soft);
 }
 
-/* LISTA */
+/* LISTA INTERNA */
 .card-list {
-  margin: 0.6rem 0 0.7rem;
+  margin: 0.6rem 0 0.9rem;
   padding-left: 1rem;
   font-size: 0.82rem;
   color: var(--text-soft);
@@ -198,7 +214,7 @@ body {
   margin-top: 0.18rem;
 }
 
-/* PILL de categoría */
+/* PÍLDORA DE SECCIÓN (01 · VIDRIO, etc) */
 .pill {
   display: inline-flex;
   align-items: center;
@@ -216,19 +232,48 @@ body {
   );
 }
 
-/* Footer tarjeta */
+/* FOOTER TARJETA */
 .card-footer {
   border-top: 1px dashed rgba(255, 255, 255, 0.12);
-  padding-top: 0.35rem;
+  padding-top: 0.55rem;
   margin-top: auto;
 }
 
+/* BOTÓN PRO */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 18px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #2f8bff, #0d5dd8);
+  border: 1px solid rgba(10, 80, 210, 0.9);
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.86rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.55);
+  transition:
+    transform 0.18s ease-out,
+    box-shadow 0.18s ease-out,
+    background 0.18s ease-out,
+    filter 0.18s ease-out;
+}
+
+.btn:hover,
+.btn:active {
+  transform: translateY(-2px);
+  background: linear-gradient(135deg, #1f7af0, #005bd1);
+  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.7);
+  filter: brightness(1.05);
+}
+
+/* MARCADORES DE SECCIÓN (colores pequeños textos) */
 .section-marker {
   font-size: 0.78rem;
   font-weight: 600;
 }
 
-/* Colores por sección */
 .section-vidrio {
   color: #7cc7ff;
 }
@@ -261,18 +306,18 @@ body {
   }
 }
 
-/* BOTÓN PRO (para “Ver listado…") */
-.btn {
-  display: inline-block;
-  padding: 10px 18px;
-  border-radius: 8px;
-  background: #2f8bff;
-  color: white;
-  text-decoration: none;
-  font-weight: 600;
-  transition: 0.25s ease;
-}
+/* UN POCO MÁS DE AIRE EN ESCRITORIO */
+@media (min-width: 1024px) {
+  .container {
+    padding-top: 2rem;
+  }
 
-.btn:hover {
-  background: #006ae0;
+  .intro {
+    margin-top: 1.4rem;
+    margin-bottom: 1rem;
+  }
+
+  .card {
+    padding: 1.1rem 1.2rem 1rem;
+  }
 }
