@@ -278,3 +278,7 @@ body {
   box-shadow: 0 6px 20px rgba(0,0,0,0.35);
   transition: 0.25s ease;
 }
+.section-title {
+  border-left: 5px solid #2f8bff;
+  padding-left: 12px;
+}
