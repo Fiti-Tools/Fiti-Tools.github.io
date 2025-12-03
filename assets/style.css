@@ -270,3 +270,6 @@ body {
 
 .card::before {
   background
+  body {
+  background: linear-gradient(140deg, #001634 0%, #00224d 40%, #003064 100%);
+}
