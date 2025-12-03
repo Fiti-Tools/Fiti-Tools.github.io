@@ -7,7 +7,6 @@
   <link rel="stylesheet" href="assets/style.css" />
 </head>
 <body>
-  <!-- TOP BAR -->
   <header class="topbar">
     <div class="brand">
       <div class="logo-box">
@@ -26,16 +25,16 @@
   </header>
 
   <main class="container">
-    <!-- TÍTULO PRINCIPAL -->
+    <!-- Título principal -->
     <section class="intro">
-      <h1>Catálogo de productos</h1>
+      <h2>Catálogo de productos</h2>
     </section>
 
-    <!-- GRID DE CATEGORÍAS -->
+    <!-- GRID DE TARJETAS -->
     <section class="grid">
 
       <!-- VIDRIO -->
-      <a href="vidrio.html" class="card">
+      <article class="card">
         <div class="card-header">
           <span class="pill">01 · Vidrio</span>
           <h2>VIDRIO</h2>
@@ -53,12 +52,13 @@
           <li>Insumos para DVH</li>
         </ul>
         <div class="card-footer">
-          <span class="section-marker section-vidrio btn">Ver listado de Vidrio</span>
+          <!-- Cambiá vidrio.html por vidrio.xlsx o el enlace que uses -->
+          <a href="vidrio.html" class="btn">Ver listado de Vidrio</a>
         </div>
-      </a>
+      </article>
 
       <!-- ALUMINIO -->
-      <a href="aluminio.html" class="card">
+      <article class="card">
         <div class="card-header">
           <span class="pill">02 · Aluminio</span>
           <h2>ALUMINIO</h2>
@@ -78,12 +78,12 @@
           <li>Máquinas industriales</li>
         </ul>
         <div class="card-footer">
-          <span class="section-marker section-aluminio btn">Ver listado de Aluminio</span>
+          <a href="aluminio.html" class="btn">Ver listado de Aluminio</a>
         </div>
-      </a>
+      </article>
 
       <!-- METAL -->
-      <a href="metal.html" class="card">
+      <article class="card">
         <div class="card-header">
           <span class="pill">03 · Metal</span>
           <h2>METAL</h2>
@@ -100,12 +100,12 @@
           <li>Carros colgantes para portón</li>
         </ul>
         <div class="card-footer">
-          <span class="section-marker section-metal btn">Ver listado de Metal</span>
+          <a href="metal.html" class="btn">Ver listado de Metal</a>
         </div>
-      </a>
+      </article>
 
       <!-- CONSTRUCCIÓN -->
-      <a href="construccion.html" class="card">
+      <article class="card">
         <div class="card-header">
           <span class="pill">04 · Construcción</span>
           <h2>CONSTRUCCIÓN</h2>
@@ -117,21 +117,4 @@
           <li>Catálogo completo de productos para el sector construcción.</li>
           <li>Detalle de medidas, modelos y aplicaciones en el archivo Excel.</li>
         </ul>
-        <div class="card-footer">
-          <span class="section-marker section-construccion btn">Ver listado de Construcción</span>
-        </div>
-      </a>
-
-    </section>
-  </main>
-
-  <footer class="footer">
-    © <span id="year"></span> Fiti-Tools · Máquinas e Insumos Industriales
-  </footer>
-
-  <script>
-    // Año automático en el footer
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
-</body>
-</html>
+        <div
