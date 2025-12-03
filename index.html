@@ -3,160 +3,127 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Fiti-Tools | Catálogo industrial</title>
+  <title>Fiti-Tools | Catálogo de productos</title>
   <link rel="stylesheet" href="assets/style.css" />
 </head>
-<body class="home-page">
-  <!-- TOP NAV -->
+<body>
   <header class="topbar">
-    <div class="topbar-left">
+    <div class="brand">
       <div class="logo-box">
-        <img src="assets/logo-fiti-tools.png" alt="Fiti-Tools" />
+        <!-- Logo: guardá la imagen como assets/logo-fiti-tools.png -->
+        <img src="assets/logo-fiti-tools.png" alt="Fiti-Tools Máquinas e Insumos Industriales">
       </div>
       <div class="brand-text">
-        <span class="brand-kicker">Catálogo industrial</span>
-        <span class="brand-title">Fiti-Tools</span>
-        <span class="brand-subtitle">Máquinas e Insumos Industriales</span>
+        <span class="brand-name">FITI-TOOLS</span>
+        <span class="brand-tagline">Máquinas e Insumos Industriales</span>
       </div>
     </div>
-
-    <div class="topbar-right">
-      <div class="status-pill status-ok">
-        <span class="status-dot"></span>
-        Catálogo listo · Actualización manual
-      </div>
+    <div class="status-pill">
+      <span class="status-dot"></span>
+      Catálogo listo · Actualización manual
     </div>
   </header>
 
-  <!-- MAIN CONTENT -->
-  <main class="main-shell">
-    <!-- HERO / RESUMEN -->
-    <section class="hero-panel">
-      <div class="hero-left">
-        <p class="hero-eyebrow">Resumen rápido</p>
-        <h1 class="hero-title">Catálogo de productos Fiti-Tools</h1>
-        <p class="hero-text">
-          Accedé a los listados por rubro y compartí los archivos directamente
-          por WhatsApp o correo. Pensado para uso rápido desde el celular en obra
-          o en el mostrador.
-        </p>
-        <div class="hero-tags">
-          <span class="tag">Vidrio</span>
-          <span class="tag">Aluminio</span>
-          <span class="tag">Metal</span>
-          <span class="tag">Construcción</span>
-        </div>
-      </div>
+  <main class="container">
+    <section class="intro">
+      <h1>Catálogo de productos</h1>
+      <p>
+        Accedé a los listados por rubro y compartí los archivos directamente
+        por WhatsApp o correo. Pensado para uso rápido desde el celular en obra
+        o en el mostrador.
+      </p>
+    </section>
 
-      <div class="hero-right">
-        <div class="stat-card">
-          <p class="stat-label">Rubro activos</p>
-          <p class="stat-value">4</p>
-          <p class="stat-note">Listados en hoja de cálculo</p>
-        </div>
-        <div class="stat-card secondary">
-          <p class="stat-label">Uso recomendado</p>
-          <p class="stat-note">
-            Abrir la categoría, revisar el listado y reenviar desde el botón
-            “Compartir” del Excel.
+    <section class="grid">
+
+      <!-- VIDRIO -->
+      <a href="vidrio.html" class="card">
+        <div class="card-header">
+          <span class="pill">01 · Vidrio</span>
+          <h2>VIDRIO</h2>
+          <p class="card-subtitle">
+            Herrajes, insumos y accesorios para trabajos en vidrio.
           </p>
         </div>
-      </div>
-    </section>
-
-    <!-- GRID DE CATEGORÍAS -->
-    <section class="section-header">
-      <div>
-        <h2>Categorías del catálogo</h2>
-        <p>Elegí el rubro para ver el detalle completo.</p>
-      </div>
-      <span class="section-pill">Acceso rápido</span>
-    </section>
-
-    <section class="cards-grid">
-      <!-- VIDRIO -->
-      <a href="vidrio.html" class="cat-card">
-        <div class="cat-header">
-          <span class="cat-index">01</span>
-          <div>
-            <h3 class="cat-title">Vidrio</h3>
-            <p class="cat-subtitle">
-              Herrajes, insumos y accesorios para trabajos en vidrio.
-            </p>
-          </div>
-        </div>
-        <ul class="cat-list">
-          <li>Herrajes para puertas y mamparas</li>
-          <li>Cerraduras línea Santa Marina</li>
-          <li>Insumos para DVH y vitrinas</li>
+        <ul class="card-list">
+          <li>Herrajes</li>
+          <li>Insumos &amp; Máquinas</li>
+          <li>Cerraduras línea Santa Marina y para aplicar</li>
+          <li>Juego herrajes puerta Blindex Santa Marina</li>
+          <li>Insumos para mampara de baño</li>
+          <li>Accesorios para vitrina</li>
+          <li>Insumos para DVH</li>
         </ul>
-        <div class="cat-footer">
-          <span class="cat-marker vidrio">Ver listado de Vidrio</span>
+        <div class="card-footer">
+          <span class="section-marker section-vidrio">Ver listado de Vidrio</span>
         </div>
       </a>
 
       <!-- ALUMINIO -->
-      <a href="aluminio.html" class="cat-card">
-        <div class="cat-header">
-          <span class="cat-index">02</span>
-          <div>
-            <h3 class="cat-title">Aluminio</h3>
-            <p class="cat-subtitle">
-              Carpintería de aluminio, accesorios e insumos industriales.
-            </p>
-          </div>
+      <a href="aluminio.html" class="card">
+        <div class="card-header">
+          <span class="pill">02 · Aluminio</span>
+          <h2>ALUMINIO</h2>
+          <p class="card-subtitle">
+            Carpintería de aluminio, accesorios e insumos industriales.
+          </p>
         </div>
-        <ul class="cat-list">
-          <li>Burletes, carros y cerraduras</li>
-          <li>Serie 20 / 25 y alta prestación</li>
-          <li>Frenos aéreos y máquinas</li>
+        <ul class="card-list">
+          <li>Burlete PVC Premium para carpintería de aluminio</li>
+          <li>Carros con y sin rulemán</li>
+          <li>Cerraduras para puertas batientes o corredizas</li>
+          <li>Accesorios &amp; insumos Serie 20 &amp; 25</li>
+          <li>Accesorios &amp; insumos Alta Prestación</li>
+          <li>Tornillos, remaches</li>
+          <li>Hojas de sierras, fresas o mechas p/ pantógrafo</li>
+          <li>Frenos aéreos</li>
+          <li>Máquinas industriales</li>
         </ul>
-        <div class="cat-footer">
-          <span class="cat-marker aluminio">Ver listado de Aluminio</span>
+        <div class="card-footer">
+          <span class="section-marker section-aluminio">Ver listado de Aluminio</span>
         </div>
       </a>
 
       <!-- METAL -->
-      <a href="metal.html" class="cat-card">
-        <div class="cat-header">
-          <span class="cat-index">03</span>
-          <div>
-            <h3 class="cat-title">Metal</h3>
-            <p class="cat-subtitle">
-              Soluciones para portones, cerraduras y herrajes metálicos.
-            </p>
-          </div>
+      <a href="metal.html" class="card">
+        <div class="card-header">
+          <span class="pill">03 · Metal</span>
+          <h2>METAL</h2>
+          <p class="card-subtitle">
+            Soluciones para portones, cerraduras y herrajes metálicos.
+          </p>
         </div>
-        <ul class="cat-list">
-          <li>Ruedas y carros colgantes</li>
+        <ul class="card-list">
+          <li>Rueda metálica para portón</li>
+          <li>Insumos &amp; accesorios</li>
           <li>Frenos aéreos</li>
-          <li>Cerraduras, cerrojos y magnéticas</li>
+          <li>Cerraduras &amp; cerrojos</li>
+          <li>Cerradura magnética</li>
+          <li>Carros colgantes para portón</li>
         </ul>
-        <div class="cat-footer">
-          <span class="cat-marker metal">Ver listado de Metal</span>
+        <div class="card-footer">
+          <span class="section-marker section-metal">Ver listado de Metal</span>
         </div>
       </a>
 
       <!-- CONSTRUCCIÓN -->
-      <a href="construccion.html" class="cat-card">
-        <div class="cat-header">
-          <span class="cat-index">04</span>
-          <div>
-            <h3 class="cat-title">Construcción</h3>
-            <p class="cat-subtitle">
-              Insumos, herramientas y soluciones para obras y reformas.
-            </p>
-          </div>
+      <a href="construccion.html" class="card">
+        <div class="card-header">
+          <span class="pill">04 · Construcción</span>
+          <h2>CONSTRUCCIÓN</h2>
+          <p class="card-subtitle">
+            Insumos, herramientas y soluciones para obras y reformas.
+          </p>
         </div>
-        <ul class="cat-list">
-          <li>Categorías específicas para obra</li>
-          <li>Detalles por medida y modelo</li>
-          <li>Listados por referencia</li>
+        <ul class="card-list">
+          <li>Catálogo completo de productos para el sector construcción.</li>
+          <li>Detalle de medidas, modelos y aplicaciones en el archivo Excel.</li>
         </ul>
-        <div class="cat-footer">
-          <span class="cat-marker construccion">Ver listado de Construcción</span>
+        <div class="card-footer">
+          <span class="section-marker section-construccion">Ver listado de Construcción</span>
         </div>
       </a>
+
     </section>
   </main>
 
