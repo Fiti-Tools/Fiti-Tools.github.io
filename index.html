@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Fiti-Tools | Catálogo rápido</title>
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="logo-box">
+        <!-- Logo: guardá la imagen como assets/logo-fiti-tools.png -->
+        <img src="assets/logo-fiti-tools.png" alt="Fiti-Tools - Máquinas e Insumos Industriales" />
+      </div>
+      <div class="brand-text">
+        <span class="brand-name">Fiti-Tools</span>
+        <span class="brand-tagline">Máquinas e Insumos Industriales</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="intro">
+      <h1>Catálogo de productos</h1>
+      <p>Seleccioná una categoría para descargar el listado en Excel y compartirlo por WhatsApp o correo.</p>
+    </section>
+
+    <section class="grid">
+      <!-- CATEGORÍA 1 · VIDRIO -->
+      <a href="archivos/vidrio.xlsx" class="card" download>
+        <div class="card-icon">🪟</div>
+        <div class="card-body">
+          <h2>VIDRIO</h2>
+          <p>Herrajes, insumos y accesorios para trabajos en vidrio.</p>
+          <ul>
+            <li>Herrajes</li>
+            <li>Insumos &amp; Máquinas</li>
+            <li>Cerraduras línea Santa Marina y para aplicar</li>
+            <li>Juego herrajes puerta Blindex Santa Marina</li>
+            <li>Insumos para mampara de baño</li>
+            <li>Accesorios para vitrina</li>
+            <li>Insumos para DVH</li>
+          </ul>
+        </div>
+      </a>
+
+      <!-- CATEGORÍA 2 · ALUMINIO -->
+      <a href="archivos/aluminio.xlsx" class="card" download>
+        <div class="card-icon">🧱</div>
+        <div class="card-body">
+          <h2>ALUMINIO</h2>
+          <p>Carpintería de aluminio, accesorios e insumos industriales.</p>
+          <ul>
+            <li>Burlete PVC Premium para carpintería de aluminio</li>
+            <li>Carros con y sin rulemán</li>
+            <li>Cerraduras para puertas batientes o corredizas</li>
+            <li>Accesorios &amp; insumos Serie 20 &amp; 25</li>
+            <li>Accesorios &amp; insumos Alta Prestación</li>
+            <li>Tornillos, remaches</li>
+            <li>Hojas de sierras, fresas o mechas p/ pantógrafo</li>
+            <li>Frenos aéreos</li>
+            <li>Máquinas industriales</li>
+          </ul>
+        </div>
+      </a>
+
+      <!-- CATEGORÍA 3 · METAL -->
+      <a href="archivos/metal.xlsx" class="card" download>
+        <div class="card-icon">⚙️</div>
+        <div class="card-body">
+          <h2>METAL</h2>
+          <p>Soluciones para portones, cerraduras y herrajes metálicos.</p>
+          <ul>
+            <li>Rueda metálica para portón</li>
+            <li>Insumos &amp; accesorios</li>
+            <li>Frenos aéreos</li>
+            <li>Cerraduras &amp; cerrojos</li>
+            <li>Cerradura magnética</li>
+            <li>Carros colgantes para portón</li>
+          </ul>
+        </div>
+      </a>
+
+      <!-- CATEGORÍA 4 · CONSTRUCCIÓN -->
+      <a href="archivos/construccion.xlsx" class="card" download>
+        <div class="card-icon">🏗️</div>
+        <div class="card-body">
+          <h2>CONSTRUCCIÓN</h2>
+          <p>Insumos, herramientas y soluciones para el sector construcción.</p>
+          <p>Dentro del Excel encontrará el detalle completo de productos disponibles.</p>
+        </div>
+      </a>
+    </section>
+
+    <section class="help">
+      <h2>Cómo usar este catálogo</h2>
+      <ol>
+        <li>Subí tus archivos Excel a la carpeta <code>archivos/</code> del proyecto.</li>
+        <li>Verificá que los nombres coincidan con los enlaces:
+          <code>vidrio.xlsx</code>, <code>aluminio.xlsx</code>, <code>metal.xlsx</code>, <code>construccion.xlsx</code>.
+        </li>
+        <li>Si cambiás algún nombre de archivo, actualizalo también en los <code>href</code> de cada tarjeta.</li>
+        <li>Subí los cambios a GitHub. Desde el celular, entran a la web, tocan la tarjeta y se descarga el Excel listo para reenviar.</li>
+      </ol>
+    </section>
+  </main>
+
+  <footer class="footer">
+    © <span id="year"></span> Fiti-Tools · Catálogo rápido
+  </footer>
+
+  <script>
+    // Año automático en el footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
