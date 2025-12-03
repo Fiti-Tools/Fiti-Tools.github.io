@@ -255,3 +255,18 @@ body {
     align-items: flex-start;
   }
 }
+/* === AJUSTES EXTRA "WOW" === */
+
+/* Fondo un poco más suave */
+body {
+  background: radial-gradient(circle at top, #08408f 0, #020717 45%, #000 100%);
+}
+
+/* Tarjetas con más profundidad y brillo al pasar */
+.card {
+  border-radius: 20px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.9);
+}
+
+.card::before {
+  background
