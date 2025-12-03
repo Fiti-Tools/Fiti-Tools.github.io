@@ -273,3 +273,8 @@ body {
   body {
   background: linear-gradient(140deg, #001634 0%, #00224d 40%, #003064 100%);
 }
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.35);
+  transition: 0.25s ease;
+}
